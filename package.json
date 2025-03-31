@@ -1,0 +1,28 @@
+{
+  "name": "react-mf-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "mf-shell",
+    "mf-detail",
+    "mf-history"
+  ],
+  "scripts": {
+    "dev:shell": "npm run dev --workspace=mf-shell",
+    "dev:detail": "npm run dev --workspace=mf-detail",
+    "dev:history": "npm run dev --workspace=mf-history",
+    "dev:all": "concurrently \"npm run dev:shell\" \"npm run dev:detail\" \"npm run dev:history\"",
+    "lint": "eslint \"./**/*.{js,jsx,ts,tsx}\" --quiet",
+    "format": "prettier --write ."
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0",
+    "eslint": "^9.23.0",
+    "prettier": "^3.2.5"
+  },
+  "dependencies": {
+    "axios": "^1.6.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
