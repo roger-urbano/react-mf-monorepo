@@ -10,8 +10,8 @@ export default defineConfig({
     federation({
       name: 'mfShell',
       remotes: {
-        mfDetail: 'http://localhost:3001/assets/remoteEntry.js',
-        mfHistory: 'http://localhost:3002/assets/remoteEntry.js'
+        mfDetail: 'http://localhost:4174/assets/remoteEntry.js',
+        mfHistory: 'http://localhost:4175/assets/remoteEntry.js'
       },
       shared: ['react', 'react-dom', 'react-redux', '@reduxjs/toolkit', 'axios', 'react-toastify', 'react-spinners']
     })

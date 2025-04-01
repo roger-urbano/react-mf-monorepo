@@ -1,12 +1,16 @@
-/** @type {import('tailwindcss').Config} */
 module.exports = {
-    content: [
-      "./index.html",              // HTML en la raíz
-      "./src/**/*.{js,ts,jsx,tsx}" // Archivos fuente
-    ],
-    theme: {
-      extend: {},
+  content: [
+    './index.html',
+    './src/**/*.{js,jsx,ts,tsx}',
+    './src/components/**/*.{js,jsx,ts,tsx}', 
+  ],
+  darkMode: 'class',
+  theme: {
+    extend: {
+      colors: {
+        test: '#ff00ff',
+      },
     },
-    plugins: [],
-}
-  
+  },
+  plugins: [],
+};

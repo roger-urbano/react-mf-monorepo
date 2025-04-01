@@ -19,7 +19,7 @@ export default defineConfig({
     })
   ],
   server: {
-    port: 4134
+    port: 4174
   },
   build: {
     modulePreload: false,
