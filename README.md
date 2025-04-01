@@ -68,9 +68,9 @@ npm run dev
 
 ---
 
-## 📆 Build y Preview
+## 📆 Build y Preview ¡IMPORTANTE PARA PROBAR EN DESARROLLO LOCAL!
 
-Cada micro frontend puede construirse y previsualizarse con:
+Cada micro frontend debe construirse y previsualizarse con:
 
 ```bash
 npm run preview:build
